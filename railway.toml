@@ -5,3 +5,4 @@ builder = "nixpacks"
 startCommand = "node server.js"
 healthcheckPath = "/api/health"
 restartPolicyType = "on_failure"
+EOF
