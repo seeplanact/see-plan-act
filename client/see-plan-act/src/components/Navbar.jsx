@@ -41,7 +41,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="SeePlanAct"
-          className="h-18 md:h-22 w-auto"
+          className="h-16 md:h-20 w-auto"
         />
       </Link>
 
