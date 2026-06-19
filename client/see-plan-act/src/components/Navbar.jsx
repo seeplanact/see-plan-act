@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
+import logo from '../assets/logo.png';
 
 const NAV_LINKS = [
   { label: 'Home', to: '/' },
@@ -36,11 +37,13 @@ const Navbar = () => {
     >
       <nav className="container-custom flex items-center justify-between h-14 md:h-16">
         {/* Logo */}
-        <Link to="/" className="font-display font-bold text-base md:text-lg tracking-widest">
-          <span className="text-white">SEE</span>
-          <span className="logo-plan">PLAN</span>
-          <span className="text-white">ACT</span>
-        </Link>
+        <Link to="/" className="flex items-center">
+        <img
+          src={logo}
+          alt="SeePlanAct"
+          className="h-10 md:h-12 w-auto"
+        />
+      </Link>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center gap-8">
