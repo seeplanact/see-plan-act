@@ -39,6 +39,13 @@ const contactLimiter = rateLimit({
 const allowedOrigins = [
   'https://seeplanact.online',
   'https://www.seeplanact.online',
+
+  'https://seeplanact.in',
+  'https://www.seeplanact.in',
+
+  'https://seeplanact.com',
+  'https://www.seeplanact.com',
+
   'http://localhost:5173',
   'http://localhost:3000'
 ];
